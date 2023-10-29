@@ -17,10 +17,11 @@ function convertToDecimal(value) {
 }
 
 function getElementWidth(content, padding, border) {
-    content = convertToDecimal(content);
-    padding = convertToDecimal(padding);
-    border = convertToDecimal(border);
-    return content + padding * 2 + border * 2;
+    contentA = convertToDecimal(content);
+    paddingA = convertToDecimal(padding);
+    borderA = convertToDecimal(border);
+    
+    return contentA + paddingA * 2 + borderA * 2;
 }
 
 console.log(getElementWidth("50px", "8px", "4px")); // 74
